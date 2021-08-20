@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <link rel="stylesheet" type="text/css" href="css/website.css">
+    <link rel="stylesheet" type="text/css" href="css/RecipeOrganizer.css">
+    <script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer type="text/javascript" src="js/RecipeOrganizer.js" charset="utf-8"></script>
+    <script defer type="text/javascript" src="js/examples.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title>RecipeOrganizing.js</title>
+</head>
+<body>
+
+    <div id="header">
+      <a id="landingHeader" href='index.html'>RecipeOrganizing.js</a>
+
+      <ul id="navRight">
+        <li><a href='api.html' id="apiHeader">API</a></li>
+        <li><a href='examples.html' id="exHeader">Examples</a></li>
+      </ul>
+    </div>
+
+    <div id="apiContainer">
+
+      <p id="apiPage"> Examples </p>
+
+        <p id="apiText">
+          These are examples on how you could use this library. First, let's
+          consider a dessert template:
+        </p>
+        <div id="snippetBox">
+          <pre id="snippetText">
+            <span id="olive">const recipe</span> = <span id="olive">new</span> <span id="orange">RecipeOrganizer</span>();
+
+            // Give an HTML element to to add the library to.
+            <span id="olive">const thisElement</span> = <span id="blue">document</span>.<span id="purple">querySelector</span>(<span id="green">"#dessertExample"</span>);
+            <span id="blue">recipe</span>.createDessertTemplate(thisElement, <span id="green">"pink"</span>, <span id="green">"white"</span>, <span id="green">"white"</span>, <span id="green">"white"</span>);
+          </pre>
+        </div>
+        <div id="dessertExample"> </div>
+
+        <p id="apiText" style="margin-top:520px;">
+          Then we can add information to the template as such:
+        </p>
+        <div id="snippetBox">
+          <pre id="snippetText">
+            <span id="blue">recipe</span>.makeTitle(<span id="green">"New York Style Cheesecake"</span>);
+            <span id="blue">recipe</span>.addImage(<span id="green">"./cheesecake.jpg"</span>);
+            <span id="blue">recipe</span>.addDescription(<span id="green">"Cheesecake that you can easily make at home!"</span>);
+            <span id="blue">recipe</span>.expandIngredients(120);
+            <span id="blue">recipe</span>.addIngredient(<span id="green">"wet"</span>, <span id="green">"Cream cheese packages"</span>, <span id="green">"1000"</span>, <span id="green">"g"</span>);
+            <span id="blue">recipe</span>.addIngredient(<span id="green">"wet"</span>, <span id="green">"Condensed milk"</span>, <span id="green">"500"</span>, <span id="green">"ml"</span>);
+            <span id="blue">recipe</span>.addIngredient(<span id="green">"dry"</span>, <span id="green">"Flour"</span>, <span id="green">"0.75"</span>, <span id="green">"cup"</span>);
+            <span id="blue">recipe</span>.addIngredient(<span id="green">"wet"</span>, <span id="green">"Sour cream"</span>, <span id="green">"0.75"</span>, <span id="green">"cup"</span>);
+            <span id="blue">recipe</span>.addIngredient(<span id="green">"wet"</span>, <span id="green">"Ricotta"</span>, <span id="green">"1"</span>, <span id="green">"cup"</span>);
+            <span id="blue">recipe</span>.addIngredient(<span id="green">"wet"</span>, <span id="green">"Vanilla extract"</span>, <span id="green">"2"</span>, <span id="green">"tsp"</span>);
+            <span id="blue">recipe</span>.addIngredient(<span id="green">"wet"</span>, <span id="green">"eggs + yolk"</span>, <span id="green">"3"</span>, <span id="green">""</span>);
+          </pre>
+        </div>
+        <div id="dessertExample2"> </div>
+
+        <p id="apiText" style="margin-top:650px;">
+          We can also add a volume conversion, volume scaler, and step-by-step instructions to the template as such:
+        </p>
+        <div id="snippetBox">
+          <pre id="snippetText">
+            <span id="blue">recipe</span>.addScale();
+            <span id="blue">recipe</span>.addVolume();
+            <span id="blue">recipe</span>.addInstructions(<span id="green">"violet"</span>, <span id="green">"skyBlue"</span>);
+            <span id="blue">recipe</span>.addSteps(<span id="green">"Mix creamcheese until softened in the mixer, \
+            then add ricotta. Then as its mixing, add condensed milk and vanilla extract."</span>, <span id="green">"white"</span>);
+            <span id="blue">recipe</span>.addSteps(<span id="green">"Then add 1 egg at a time while it is slowly mixing."</span>, <span id="green">"white"</span>);
+            <span id="blue">recipe</span>.addSteps(<span id="green">"Sift the flour while mixing. Then after, add the sour cream."</span>, <span id="green">"white"</span>);
+            <span id="blue">recipe</span>.addSteps(<span id="green">"Finally, bake at 400° for 10 minutes. Then 225° at 25 minutes."</span>, <span id="green">"white"</span>);
+          </pre>
+        </div>
+        <div id="dessertExample3"> </div>
+    </div>
+</body>
+</html>

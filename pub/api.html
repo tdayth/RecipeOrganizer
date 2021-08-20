@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <link rel="stylesheet" type="text/css" href="css/website.css">
+    <meta charset="utf-8">
+    <title>RecipeOrganizing.js</title>
+</head>
+<body>
+  <div id="header">
+    <a id="landingHeader" href='index.html'>RecipeOrganizing.js</a>
+
+    <ul id="navRight">
+      <li><a href='api.html' id="apiHeader">API</a></li>
+      <li><a href='examples.html' id="exHeader">Examples</a></li>
+    </ul>
+  </div>
+
+  <div id="apiContainer">
+    <p id="apiPage"> API Documentation </p>
+    <p id="gettingStarted"> Getting started </p>
+    <p id="apiText"> To get started, you want to add the following lines in your HTML file: </p>
+    <div id="snippetBox">
+      <pre id="snippetText">
+        <<span id="blue">link</span> rel=<span id="green">"stylesheet"</span> type=<span id="green">"text/css"</span> href=<span id="green">"css/website.css"</span>>
+        <<span id="blue">link</span> rel=<span id="green">"stylesheet"</span> type=<span id="green">"text/css"</span> href=<span id="green">"css/RecipeOrganizer.css"</span>>
+        <<span id="blue">script</span> defer type=<span id="green">"text/javascript"</span> src=<span id="green">"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</span>></script>
+        <<span id="blue">script</span> defer type=<span id="green">"text/javascript"</span> src=<span id="green">"js/RecipeOrganizer.js"</span> charset=<span id="green">"utf-8"</span>></script>
+        <<span id="blue">script</span> defer type=<span id="green">"text/javascript"</span> src=<span id="green">"js/examples.js"</span> charset=<span id="green">"utf-8"</span>></script>
+      </pre>
+    </div>
+    <p id="apiText"> Then to initialize an object, use: </p>
+    <div id="snippetBox">
+      <pre id="snippetText">
+        <span id="olive">const recipe</span> = <span id="olive">new</span> <span id="orange">RecipeOrganizer</span>();
+      </pre>
+    </div>
+    <p id="gettingStarted"> Functions </p>
+    <p id="functions"> .createDessertTemplate(<i>element</i>, <i>divCol</i>, <i>desCol</i>, <i>oneCol</i>, <i>TwoCol</i>)</p>
+    <p id="apiText"> Creates a dessert template. Adds this template to <i>element</i>. The arguments <i>divCol</i>, <i>desCol</i>, <i>oneCol</i>, <i>TwoCol</i> correspond
+       to the background colours of the main box, description box, and ingredient box, respectively.</p>
+    <br>
+    <p id="functions"> .createStandardTemplate(<i>element</i>, <i>divCol</i>, <i>desCol</i>, <i>oneCol</i>)</p>
+    <p id="apiText"> Creates a standard template. Adds this template to <i>element</i>. The arguments <i>divCol</i>, <i>desCol</i>, <i>oneCol</i> correspond
+       to the background colours of the main box, description box, and ingredient box colours, respectively.</p>
+    <br>
+    <p id="functions"> .makeTitle(<i>title</i>)</p>
+    <p id="apiText"> Sets the <i>title</i> of the recipe.</p>
+    <br>
+    <p id="functions"> .addImage(<i>image</i>)</p>
+    <p id="apiText"> Adds <i>image</i> to recipe.</p>
+    <br>
+    <p id="functions"> .addDescription(<i>description</i>)</p>
+    <p id="apiText"> Adds <i>description</i> of recipe to template.</p>
+    <br>
+    <p id="functions"> .addIngredient(<i>type</i>, <i>ingredient</i>, <i>volume</i>, <i>measurement</i>)</p>
+    <p id="apiText"> Takes in the <i>type</i> of <i>ingredient</i> (normal, dry, wet) depending on
+      which template is used (dessert, standard). Then it takes <i>volume</i>, <i>measurement</i> which will be stored in the event that the user makes conversions.
+      all of these will be added to the ingredient list on the template.</p>
+    <br>
+    <p id="functions"> .addScale()</p>
+    <p id="apiText"> Adds the option for the user to scale ingredients.</p>
+    <br>
+    <p id="functions"> .addVolume()</p>
+    <p id="apiText"> Adds the option for the user to change the volume measurement.</p>
+    <br>
+    <p id="functions"> .addInstructions(<i>tranCol</i>, <i>instCol</i>)</p>
+    <p id="apiText"> Creates a div box in which steps of a recipe can be added.
+       The arguments <i>tranCol</i>, <i>instCol</i> are the transition, and instructions  background colours, respectively.</p>
+    <br>
+    <p id="functions"> .addSteps(<i>step</i>, <i>stepCol</i>)</p>
+    <p id="apiText"> Adds <i>step</i> to the instruction list. The argument <i>stepCol</i> is the
+       background colour of each step.</p>
+    <br>
+    <p id="functions"> .expandIngredients(<i>px</i>)</p>
+    <p id="apiText"> Expanding the ingredient box by <i>px</i> pixels.</p>
+    <br>
+    <p id="functions"> .expandDescriptionBox(<i>px</i>)</p>
+    <p id="apiText"> Expand the description box by <i>px</i> pixels.</p>
+    <br>
+    <p id="functions"> .removeShadow()</p>
+    <p id="apiText"> Removes all shadows on the template.</p>
+    <br>
+    <p id="functions"> .removeOutline()</p>
+    <p id="apiText"> Removes all outlines on the template.</p>
+    <br>
+  </div>
+</body>
+</html>

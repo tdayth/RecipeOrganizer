@@ -1,0 +1,194 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+body#landing {
+  background: linear-gradient( rgba(255,218,100, 1), rgba(255,218,255, 0.9), rgba(255,218,100, 1) ), url(../foodpic.jpeg);
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  background-color: lightgrey;
+  height: 50px;
+  box-shadow: 1px 1px #999999;
+}
+
+#landingHeader {
+  position: absolute;
+  font: 20px Chalkduster, fantasy;
+  color: purple;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 10px;
+
+}
+
+#navRight {
+  list-style-type: none;
+  float: right;
+  margin-right: 80px;
+}
+
+#navRight li {
+  display: inline-block;
+}
+
+#apiHeader {
+  text-decoration: none;
+  font: 20px Palatino, URW Palladio L, serif;
+  color: black;
+  margin-right: 30px;
+
+}
+
+#exHeader {
+  text-decoration: none;
+  font: 20px Palatino, URW Palladio L, serif;
+  color: black;
+}
+
+#normalText {
+  font: 20px Palatino, URW Palladio L, serif;
+  color: black;
+}
+
+#codeBox {
+  position: absolute;
+  left: 80px;
+  height: 100px;
+  width: 650px;
+  margin-top: 30px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+}
+
+#codeText {
+  position: absolute;
+  left: -80px;
+}
+
+#landingContainer {
+  width: 100%;
+  height: 100%;
+}
+
+#mainHeader {
+  font: 80px Chalkduster, fantasy;
+  color: purple;
+  text-align: center;
+}
+
+#paragraphMain {
+  font: 30px Blippo, fantasy;
+  color: black;
+  text-align: center;
+}
+
+#buttonContainer {
+  position: relative;
+  display: block;
+  width: 30%;
+  height: 150px;
+  margin-top: 10%;
+  min-width: 300px;
+  margin-left: 35%;
+}
+
+#buttonAPI {
+  position: absolute;
+  background-color: skyBlue;
+  outline: 0;
+  color: black;
+  height: 50px;
+  width: 70px;
+  font: 20px Palatino, URW Palladio L, serif;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  left: 30%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#buttonAPI:hover {
+  background-color: #91E0FF;
+}
+
+#buttonExamples {
+  position: absolute;
+  outline: 0;
+  background-color: skyBlue;
+  color: black;
+  height: 50px;
+  width: 120px;
+  font: 20px Palatino, URW Palladio L, serif;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  left: 65%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#buttonExamples:hover {
+  background-color: #91E0FF;
+}
+
+#apiContainer {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+}
+#apiPage {
+  font: 40px Palatino, URW Palladio L, serif;
+}
+
+#gettingStarted {
+  font: 25px Palatino, URW Palladio L, serif;
+}
+
+#apiText {
+  font: 18px Palatino, URW Palladio L, serif;
+}
+
+#functions {
+  font: 20px Palatino, URW Palladio L, serif;
+}
+
+#snippetBox {
+  background-color: #F5F5F5;
+  border-radius: 5px;
+}
+
+#snippetText {
+  position: relative;
+  padding-top: 10px;
+}
+
+
+
+#olive {
+  color: #808000;
+}
+
+#orange {
+  color: orange;
+}
+
+#blue {
+  color: blue;
+}
+
+#purple {
+  color: purple;
+}
+
+#green {
+  color: green;
+}
